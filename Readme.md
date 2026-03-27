@@ -11,7 +11,8 @@ A full-stack Retail Ordering System built for a hackathon that allows users to b
 - Browse Products
 - Add to Cart
 - Update / Remove Cart Items
-- Place Order with Delivery Details
+- Place Order
+- Order Status
 - View Order History
 
 ### 👨‍💼 Admin Features
@@ -55,11 +56,45 @@ Update Order Status
 
 ---
 
-## 📊 Database Entities
+### 👤 User Flow (API Summary)
 
-- User  
-- Product  
-- Cart  
-- CartItem  
-- Order  
-- OrderItem  
+POST   /api/auth/register  
+POST   /api/auth/login  
+
+GET    /api/products  
+
+POST   /api/cart/add  
+GET    /api/cart  
+PUT    /api/cart/update  
+DELETE /api/cart/remove/{id}  
+
+POST   /api/orders/place  
+GET    /api/orders/{id}  
+GET    /api/orders/user  
+
+---
+
+### 👨‍💼 Admin Flow (API Summary)
+
+POST   /api/auth/admin-login  
+
+GET    /api/admin/dashboard  
+
+POST   /api/products  
+PUT    /api/products/{id}  
+DELETE /api/products/{id}  
+GET    /api/products  
+
+GET    /api/orders  
+GET    /api/orders/{id}  
+PUT    /api/orders/{id}/status  
+
+GET    /api/users  
+
+GET    /api/admin/revenue  
+GET    /api/admin/orders-count  
+
+---
+
+
+  
