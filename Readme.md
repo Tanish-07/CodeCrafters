@@ -98,7 +98,7 @@ GET    /api/admin/orders-count
 
 ### 📊 ER Diagram
 
-![ER Diagram](./assets/er-diagram.png)
+![ER Diagram](./assets/erDiagram.png)
 
 ### 🔄 System Flow Diagram
 
